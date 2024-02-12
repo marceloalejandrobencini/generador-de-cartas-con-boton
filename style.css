@@ -1,0 +1,56 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.card {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+    height: 650px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.corner {
+    position: absolute;
+    padding: 5px;
+    font-size: 120px;
+}
+
+#numero-central {
+    font-size: 200px;
+}
+
+.top {
+    top: 0;
+    left: 0;
+}
+
+.bottom {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.heart, .diamond {
+    color: red;
+    font-size: 200px;
+}
+
+.spade, .club {
+    color: black;
+    font-size: 200px;
+}
