@@ -18,11 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const divCarta = document.getElementById('carta');
 
         divCarta.innerHTML = '';
-
         divCarta.className = `card ${carta.palo.nombre}`;
 
         const simboloArriba = document.createElement('span');
-        simboloArriba.className = 'corner top';
+        simboloArriba.classList.add('corner', 'top');
         simboloArriba.textContent = carta.palo.simbolo;
 
         const numeroCentral = document.createElement('span');
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         numeroCentral.textContent = carta.valor;
 
         const simboloAbajo = document.createElement('span');
-        simboloAbajo.className = 'corner bottom';
+        simboloAbajo.classList.add('corner', 'bottom');
         simboloAbajo.textContent = carta.palo.simbolo;
 
         divCarta.appendChild(simboloArriba);
@@ -43,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const botonGenerarCarta = document.getElementById('generarCarta');
     botonGenerarCarta.addEventListener('click', mostrarCarta);
 });
+
